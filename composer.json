@@ -1,0 +1,37 @@
+{
+    "name": "mavart/axerve-client-sdk",
+    "description": "SDK PHP per integrare le API di pagamento Axerve",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mavart"
+        }
+    ],
+    "require": {
+        "php": ">=7.4",
+        "ext-json": "*",
+        "ext-curl": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.0",
+        "squizlabs/php_codesniffer": "^3.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Axerve\\Payment\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Axerve\\Payment\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "phpunit",
+        "cs": "phpcs"
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
